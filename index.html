@@ -2,12 +2,13 @@
     <head>
         <title>Exo de cour</title>
         <script type="text/javascript" src="TestCour.js"></script>
+        <script langage ="javaScript">
+           // surfaceRectangle();
+        </script>
     </head>
     <body>
         <h1>Exercice en javaScript</h1>
-        <script type="text/javascript" langage ="javaScript">
-           // surfaceRectangle();
-        </script>
+
         <form>
             <div>
                 <label for="nomber">nombre :</label>
@@ -16,6 +17,13 @@
             <input  onClick ="somme(document.getElementById('number').value)" type="submit" id="SRectangle" value="Somme des n premiers" >
             <input  onSubmit ="surfaceRectangle()" type="submit" id="SRectangle" value="Surface du rectangle" >
             <input  onSubmit ="surfaceCercle()" type="submit" id="SRectangle" value="Surface du cercle" >
+            <input  onClick ="affiche()" type="submit" id="SRectangle" value="Tableau additione" >
+            <input  onClick ="afficheSoustrait()" type="submit" id="SRectangle" value="Tableau soustrait" >
+            <input  onClick ="jourDeLaSemaine()" type="submit" id="SRectangle" value="Jour de la semaine" >
+            <input  onClick ="testWhile()" type="submit" id="SRectangle" value="testwhile" >
+        </form>
+        <form>
+            
         </form>
     </body>
 </html>
