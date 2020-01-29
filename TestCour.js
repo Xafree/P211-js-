@@ -4,8 +4,8 @@ var tab = [-2,1,4];
 
 function surfaceRectangle(){
     alert("La surface du rectangle");
-    var a=prompt("Quelle est la longueur du rectangle ? ");
-    var b=prompt("Quelle est la largueur du rectangle ? ");
+    var a=prompt("Quelle est la longeur du rectangle ? ");
+    var b=prompt("Quelle est la largeur du rectangle ? ");
     alert("Sa surface du rectangle est "+ a*b);
 }
 
@@ -19,7 +19,7 @@ function somme(a){
     for(x = 0; x<= a; x++){
         res += x ;
     }
-    alert("la somme des "+a+" premier et " +res);
+    alert("la somme des "+a+" premiers est " +res);
 }
  function additionne(x){
     //alert(parseInt(document.getElementsByTagName('table')[0].getElementsByTagName('tr')[0].cells[x].innerHTML)+2); code juste c'est pour récupérer les valeur d'un tableau HTML
@@ -86,7 +86,7 @@ function jourDeLaSemaine(){
 
 function testWhile(){
     var caractere = prompt('entrée un caractère');
-    var res="";
+    var res = caractere;
     var caractereFinBoucle = "\"";
 
     while(caractere != caractereFinBoucle){
