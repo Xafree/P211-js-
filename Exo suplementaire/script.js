@@ -1,17 +1,18 @@
 function validationFormulaire(){ 
-    var elementFormulaire = document.getElementById("formulaire").elements;
-    var elementText = elementFormulaire["username"].value;
-    alert(elementText);
-    //document.write('<span style="color:red"> </span>');
-    
+    var changement = document.getElementById('erreur');
+    changement.innerHTML = "champ manquant";
 }
 
-function erreur(){
+
+//var elementFormulaire = document.getElementById("formulaire").elements;
+//var elementText = elementFormulaire["username"].value;
+//alert(elementText);
+/*function erreur(){
     var changement = getElementById('erreur');
     changement.innerHTML = "remplisser ce champ";
-}
+}*/
 
-
+//document.write('<span style="color:red"> </span>');
 //var elementText = window.document.forms.validations.elements.user_text;
 //var elementText = document.getElementById('validations').elements.user_text;
 //console.log(elementText);
