@@ -3,6 +3,20 @@ function validationFormulaire(){
     changement.innerHTML = "champ manquant";
 }
 
+function jeuJustPrix(x){
+    //ramdom = parseInt((Math.random()*10000)%1025);
+    //alert(ramdom);
+    alert(coucou1);
+   // var elementFormulaire = document.getElementById("justePrix").elements.nombre.value;
+    //var elementText = elementFormulaire["nombre"].value;
+    //alert(elementText);
+
+}
+
+function is_numeric(chaine) {
+    var exp=new RegExp("^[0-9]+$","g");
+    return exp.test(chaine);
+}
 
 //var elementFormulaire = document.getElementById("formulaire").elements;
 //var elementText = elementFormulaire["username"].value;

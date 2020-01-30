@@ -13,8 +13,13 @@
             <input type="text" name="username" required onError="validationFromulaire();">
             <span style="color:red" id ="erreur"></span>
             <input  onClick ="validationFormulaire();" type="submit" id="valide" value="submit" >
-          </form>
-            
+        </form>
+        <br/>
 
+        <form id="justePrix">
+            <label for="textspeach">nombre :</label>
+            <input type="text" name="nombre" id="nombre" >
+            <input onSubmit ="jeuJustPrix(document.getElementById('nombre').value);" type="submit" id="bleu" value="envoyer" >
+        </form> 
     </body>
 </html>
