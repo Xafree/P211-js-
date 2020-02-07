@@ -36,13 +36,15 @@
   				// ne doit s'appliquer qu'à une balise TD !
   				if (type == 'TD') {
     				// récupérer le texte de la cellule
-					var txt = td.textContent;
+					var txt = td.firstChild;
 					console.log(txt);
     				// créer un noeud élément de type input
-					var input = td.createElement("input");
+					var input = document.createElement("input");
+					
 				    // et lui donner comme value le texte
-				    // remplacer dans le tableau le noeud texte de la cellule par le noeud input
-				    td.replaceChild(txt,input);
+					input.setAttribute("value",txt.nodeValue);
+				    // remplacer dans le tableau le noeud texte de la cellule par le noeud input-
+				    td.replaceChild(input,txt);
 
 				    // mettre le focus et sélectionner la ligne d'édition input
 				    input.focus();
@@ -51,10 +53,15 @@
 				    // quand on quitte le champ d'édition 
 				    input.onblur = function() {
 				 		// récupérer la valeur saisie à ce moment
-				 		var val ="";
+				 		var val = input.value;
 	 					// et la placer directement dans la cellule 
-	
+						if( val != ""){
+							txt.nodeValue = val;
+						}
+						td.replaceChild(txt,input);
 						// supprimer le champ input inutile
+						//td.removeChild(input);
+						
 	    			}
   				}
 			}
